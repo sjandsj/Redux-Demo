@@ -21,7 +21,7 @@ const reducer = (state = initialState, action) => {
 
 let store = createStore(reducer);
 
-export default class ReduxExample extends Component {
+class ReduxExample extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -30,3 +30,5 @@ export default class ReduxExample extends Component {
     );
   }
 }
+
+export default ReduxExample;

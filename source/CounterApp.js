@@ -48,4 +48,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps)(CounterApp);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(CounterApp);
